@@ -38,8 +38,8 @@ SECRET_KEY = get_secret("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['116.124.121.193',
-                 '127.0.0.1']
+ALLOWED_HOSTS = ['port-0-python-django-11er1a24lbfxwsrs.gksl2.cloudtype.app'
+                ]
 
 
 # Application definition
