@@ -9,7 +9,6 @@
     {% load static %}
     <link href="/static/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet" >
-    <link href ="" rel="">
     <style>
       h1{
         text-align: center;
@@ -21,7 +20,7 @@
         
 </head> 
 <body>
-    <!-- <div class="p-3 mb-2 bg-dark"><h1><img src="{% static 'img/ti.webp' %}" class="img-fluid" ></div> -->
+    <div class="p-3 mb-2 bg-dark"><h1><img src="{% static 'img/ti.webp' %}" class="img-fluid" ></div>
     <div class="container">
       <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
         <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" value = '블루아카이브'  onclick='getName()'checked>
@@ -60,9 +59,9 @@
     <div class="col">
       <a href="https://www.grac.or.kr/Board/GameQna_ePeople_APP.aspx">
       <div class="card">
-        <!-- <img src="{% static 'img/boss.webp' %}" class="card-img-top"> -->
+        <img src="{% static 'img/boss.webp' %}" class="card-img-top">
         <div class="card-body" >
-          <!-- <h5 class="card-title">게임물관리위원회 민원 신청 사이트</h5> -->
+          <h5 class="card-title">게임물관리위원회 민원 신청 사이트</h5>
         </div>
       </div>
     </a>
@@ -70,9 +69,9 @@
     <div class="col">
       <a href="https://www.epeople.go.kr/nep/pttn/gnrlPttn/PttnRqstWrtnInfo.paid">
       <div class="card">
-        <!-- <img src="{% static 'img/boss2.jpg' %}" class="card-img-top" > -->
+        <img src="{% static 'img/boss2.jpg' %}" class="card-img-top" >
         <div class="card-body">
-          <!-- <h5 class="card-title">국민 신문고 민원 신청 사이트</h5> -->
+          <h5 class="card-title">국민 신문고 민원 신청 사이트</h5>
         </div>
       </div>
     </a>
@@ -112,20 +111,7 @@ function refresh() {
         alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
         }
   })
-    
-    // refreshTitle();
-    // refreshBody();
-  }
-  // function refreshBody() {
-  // console.log("바디 초기화");
-  // document.getElementById('textboxBody').value='';
-  // }
-  
-  // function refreshTitle() {
-  // console.log("타이틀 초기화");
-  // document.getElementById('textboxTitle').value ='';
-  // }
-  
+
 function getName(){
   const gameNameList = document.getElementsByName('btnradio');
   gameNameList.forEach((node) => {
