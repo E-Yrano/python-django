@@ -33,9 +33,10 @@ def get_env_variable(var_name):
 SECRET_KEY = get_env_variable('DJANGO_SECRET')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://github.com/E-Yrano/',
+                'https://port-0-python-flask-11er1a24lbfxwsrs.gksl2.cloudtype.app/']
 
 
 # Application definition
