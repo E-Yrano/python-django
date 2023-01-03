@@ -23,14 +23,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 
 
-def get_env_variable(var_name):
-  try:
-    return os.environ[var_name]
-  except KeyError:
-    error_msg = 'Set the {} environment variable'.format(var_name)
-    raise ImproperlyConfigured(error_msg)
+# def get_env_variable(var_name):
+#   try:
+#     return os.environ[var_name]
+#   except KeyError:
+#     error_msg = 'Set the {} environment variable'.format(var_name)
+#     raise ImproperlyConfigured(error_msg)
 
-SECRET_KEY = get_env_variable('DJANGO_SECRET')
+SECRET_KEY = ${{ secrets.SECRET_KEY }}
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
