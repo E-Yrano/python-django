@@ -97,7 +97,7 @@ toastr.success('복사완료')
 
 function refresh() {
   $.ajax({
-  url: "http://127.0.0.1:5002/order/",
+  url: "https://port-0-python-flask-11er1a24lbfxwsrs.gksl2.cloudtype.app/order/",
   data: {"gameName":$('input[name="btnradio"]:checked').val()},
   method: "GET",
   dataType: "json",
