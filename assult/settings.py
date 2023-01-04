@@ -29,7 +29,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 #         raise ImproperlyConfigured(error_msg)
 
 
-SECRET_KEY = ${{ secrets.SECRET_KEY }}
+# SECRET_KEY = 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
