@@ -29,7 +29,8 @@ def get_secret(setting):
         raise ImproperlyConfigured(error_msg)
 
 
-SECRET_KEY = get_secret("SECRET_KEY")
+# SECRET_KEY = get_secret("SECRET_KEY")
+SECRET_KEY = DJANGO_KEY
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
