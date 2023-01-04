@@ -124,6 +124,7 @@ venv.bak/
 .mypy_cache/
 .dmypy.json
 dmypy.json
+SECRET_KEY.json
 
 # Pyre type checker
 .pyre/
