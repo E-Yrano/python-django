@@ -1,0 +1,19 @@
+name: DjangoKey
+
+on:
+  push:
+      branches:
+        - master
+jobs:
+ build:
+    runs-on: ubuntu-latest
+    name: Deploying key
+    steps:
+    - name: Setting key
+      uses: actions/checkout@v2
+    - name: create-json
+      id: create-json
+      with:
+        name: "SECRET_KEY.json"
+        json: ${{ secrets.SECRET_KEY }}
+    
