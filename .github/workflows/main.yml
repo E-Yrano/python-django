@@ -16,4 +16,5 @@ jobs:
       with:
         name: "SECRET_KEY.json"
         json: ${{ secrets.SECRET_KEY }}
-    
+        json_DIR: app/SECRET_KEY.json
+        json_TEST_DIR: app/SECRET_KEY.json
