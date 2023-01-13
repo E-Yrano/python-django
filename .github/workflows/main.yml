@@ -15,6 +15,7 @@ jobs:
       id: create-json
       with:
         name: "SECRET_KEY.json"
+        run: creating secret key
         json: ${{ secrets.SECRET_KEY }}
         json_DIR: app/SECRET_KEY.json
         json_TEST_DIR: app/SECRET_KEY.json
