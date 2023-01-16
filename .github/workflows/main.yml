@@ -11,7 +11,6 @@ jobs:
     
     steps:
     - name: create-json
-      env:
-        SECRET_KEY: ${{ secrets.SECRET_KEY }}
-      run: echo $SECRET_KEY
+      run: |
+        echo "${{ secrets.SECRET_KEY }}" > .env
         
