@@ -6,16 +6,12 @@ on:
         - master
 jobs:
  build:
+ 
     runs-on: ubuntu-latest
-    name: Deploying key
+    
     steps:
-    - name: Setting key
-      uses: actions/checkout@v2
     - name: create-json
-      id: create-json
-      with:
-        name: "SECRET_KEY.json"
-        run: creating secret key
-        json: ${{ secrets.SECRET_KEY }}
-        json_DIR: app/SECRET_KEY.json
-        json_TEST_DIR: app/SECRET_KEY.json
+      env:
+        SECRET_KEY: ${{ secrets.SECRET_KEY }}
+      run: echo $SECRET_KEY
+        
