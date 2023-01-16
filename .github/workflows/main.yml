@@ -15,4 +15,4 @@ jobs:
       id: create-env
       with:
         file-name: 'SECRET_KEY.json'
-        SECRET_KEY: ${{ secret.SECRET_KEY }}
+        SECRET_KEY: ${{ secrets.SECRET_KEY }}
