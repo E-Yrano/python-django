@@ -10,7 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - name: create-json
-      run: |
-        echo "${{ secrets.SECRET_KEY }}" > .env
-        
+    - name: create-env-json
+      uses: schdck/create-env-json@v2
+      id: create-env
+      with:
+        file-name: 'SECRET_KEY.json'
+        SECRET_KEY: ${{ secret.SECRET_KEY }}
