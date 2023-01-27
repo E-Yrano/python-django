@@ -30,7 +30,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 #     error_msg = 'Set the {} environment variable'.format(var_name)
 #     raise ImproperlyConfigured(error_msg)
 
-SECRET_KEY = ${{ secrets.SECRET_KEY }}
+# SECRET_KEY = ${{ secrets.SECRET_KEY }}
+SECRET_KEY = os.environ.get("DJANGO_SECRET")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
