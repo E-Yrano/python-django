@@ -53,8 +53,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # 'dbtest.apps.DbtestConfig',
-    # 'myapp.apps.MyappConfig',
-#     'bootstrap4',
+    'myapp.apps.MyappConfig',
+    'bootstrap4',
     'myapp'
 ]
 
