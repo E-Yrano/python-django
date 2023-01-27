@@ -54,7 +54,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # 'dbtest.apps.DbtestConfig',
     'myapp.apps.MyappConfig',
-    'bootstrap4',
+#     'bootstrap4',
     'myapp'
 ]
 
