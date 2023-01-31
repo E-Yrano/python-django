@@ -15,7 +15,7 @@ import os, json
 from django.core.exceptions import ImproperlyConfigured
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
+ROOT_DIR = os.path.dirname(BASE_DIR)
 # secret_file = os.path.join("/home/runner/work/python-django/python-django", 'SECRET_KEY.json')
 
 # with open(secret_file) as f:
