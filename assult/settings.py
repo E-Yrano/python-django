@@ -55,7 +55,7 @@ INSTALLED_APPS = [
     # 'dbtest.apps.DbtestConfig',
     'myapp.apps.MyappConfig',
 #     'bootstrap4',
-#     'myapp'
+    'myapp'
 ]
 
 MIDDLEWARE = [
