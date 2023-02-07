@@ -36,9 +36,8 @@ SECRET_KEY = os.environ.get("DJANGO_SECRET")
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
 
-ALLOWED_HOSTS = ['https://github.com/E-Yrano/',
-                'https://port-0-python-flask-11er1a24lbfxwsrs.gksl2.cloudtype.app/']
-
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", ".cloudtype.app", 'https://github.com/E-Yrano/']
+CSRF_TRUSTED_ORIGINS = ['https://*.cloudtype.app']
 
 # Application definition
 
